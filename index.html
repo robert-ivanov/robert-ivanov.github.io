@@ -45,7 +45,130 @@
   <button type="button"  onclick ="valuet() ,tFucntion()" >Add</button>
   <button type="button" onclick="brra()">Start</button>
   <div id = "div1" class = "div1"> X</div>
+<script>
+function valuet() {
+    let ppr = document.getElementById("div1")
+    
+    return ppr.innerHTML ="V"
+    
+              }
+let x 
+function tFucntion(){
+    let t = document.getElementById("fname")
+   x= t.value
+   console.log(x)
+   return
+  } 
+function yuppi(){
+let p = x
+let y = "stats."
+let arr =[]
+let http = "http://"
+for(let i = 0; i<p.length;i++){
+if( p[i] ==="." && p[i+1] ==="c" && p[i+2] ==="o" && p[i+3] ==="m" ){
+       let g = p.slice(0,i+4)
+    if(!g.includes("www.")){
+         arr.push(http +y+p.slice(0,i+4))
+       }
+    else if (g.includes("www.")){
+      arr.push(http + g.slice(0,4).concat("stats.")+g.slice(4))
+       }
+     
 
+  p = p.slice(i+4)
+i=3
+     }
+     
+
+if( p[i] ==="." && p[i+1] ==="o" && p[i+2] ==="r" && p[i+3] ==="g" ){
+  let g = p.slice(0,i+4)
+        if(!g.includes("www.")){
+            arr.push(http +y+p.slice(0,i+4))
+            }
+        else if (g.includes("www.")){
+           arr.push(http + g.slice(0,4).concat("stats.")+g.slice(4))
+   }
+  
+p = p.slice(i+4)
+i=3
+  }
+  if( p[i] ==="." && p[i+1] ==="p" && p[i+2] ==="w"  ){
+    let g = p.slice(0,i+3)
+          if(!g.includes("www.")){
+              arr.push(http +y+p.slice(0,i+3))
+              }
+          else if (g.includes("www.")){
+             arr.push(http + g.slice(0,4).concat("stats.")+g.slice(4))
+     }
+   
+  p = p.slice(i+3)
+  i=3
+    }
+    if( p[i] ==="." && p[i+1] ==="w" && p[i+2] ==="e" && p[i+3] ==="b" && p[i+4] ==="s" && p[i+5] ==="i" && p[i+6] ==="t" && p[i+7] ==="e"   ){
+      let g = p.slice(0,i+8)
+            if(!g.includes("www.")){
+                arr.push(http +y+p.slice(0,i+8))
+                }
+            else if (g.includes("www.")){
+               arr.push(http + g.slice(0,4).concat("stats.")+g.slice(4))
+       }
+       
+    p = p.slice(i+8)
+    i=3
+      }
+      if( p[i] ==="." && p[i+1] ==="o" && p[i+2] ==="n" && p[i+3] ==="l" && p[i+4] ==="i" && p[i+5] ==="n" && p[i+6] ==="e"    ){
+        let g = p.slice(0,i+7)
+              if(!g.includes("www.")){
+                  arr.push(http +y+p.slice(0,i+7))
+                  }
+              else if (g.includes("www.")){
+                 arr.push(http + g.slice(0,4).concat("stats.")+g.slice(4))
+         }
+      
+      p = p.slice(i+7)
+      i=3
+        }
+        if( p[i] ==="." && p[i+1] ==="s" && p[i+2] ==="i" && p[i+3] ==="t" && p[i+4] ==="e"    ){
+          let g = p.slice(0,i+5)
+                if(!g.includes("www.")){
+                    arr.push(http +y+p.slice(0,i+5))
+                    }
+                else if (g.includes("www.")){
+                   arr.push(http + g.slice(0,4).concat("stats.")+g.slice(5))
+           }
+           
+        p = p.slice(i+7)
+        i=3
+          }
+          if( p[i] ==="." && p[i+1] ==="l" && p[i+2] ==="i" && p[i+3] ==="v" && p[i+4] ==="e"    ){
+            let g = p.slice(0,i+5)
+                  if(!g.includes("www.")){
+                      arr.push(http +y+p.slice(0,i+5))
+                      }
+                  else if (g.includes("www.")){
+                     arr.push(http + g.slice(0,4).concat("stats.")+g.slice(5))
+             }
+           
+          p = p.slice(i+7)
+          i=3
+            }
+    
+              }
+             
+              function Software(){
+                for(let key of arr){
+                  console.log(typeof(key))
+                window.open(key)
+                
+                }
+                
+                }
+                return Software()
+}
+function brra(){
+    console.log(yuppi())
+}
+</script>
 </body>
 
 </html>
